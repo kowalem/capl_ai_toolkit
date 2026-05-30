@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Edit(*.can|*.cin)|Write(*.can|*.cin)",
+            "command": "bash ${CAPL_PLUGIN_ROOT}/hooks/scripts/iron-law-verifier.sh",
+            "timeout": 15,
+            "statusMessage": "Verifying CAPL Iron Laws..."
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'CAPL AI Toolkit loaded — automotive simulation and testing ready.'"
+          }
+        ]
+      }
+    ]
+  }
+}
