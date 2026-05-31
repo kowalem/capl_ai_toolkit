@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "description": "CAPL AI Toolkit for CANoe/CANalyzer simulation development.",
+  "keywords": ["capl", "canoe", "canalyzer", "automotive", "simulation"],
+  "author": "capl-ai-toolkit contributors",
+  "homepage": "https://github.com/kowalem/capl-ai-toolkit",
+  "repository": "https://github.com/kowalem/capl-ai-toolkit.git"
+}
