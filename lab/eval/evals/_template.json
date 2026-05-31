@@ -9,7 +9,8 @@
         {"type": "has_iron_laws", "min_count": 3, "desc": "At least 3 Iron Laws"},
         {"type": "section_exists", "section": "Usage", "desc": "Has Usage section"},
         {"type": "frontmatter_field", "field": "name", "desc": "Has name field"},
-        {"type": "frontmatter_field", "field": "description", "desc": "Has description field"}
+        {"type": "frontmatter_field", "field": "description", "desc": "Has description field"},
+        {"type": "frontmatter_field", "field": "compatibility", "desc": "Has compatibility field"}
       ]
     },
     "accuracy": {

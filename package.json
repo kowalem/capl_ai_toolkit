@@ -15,6 +15,10 @@
     "eval:fix": "bash lab/eval/run_eval.sh --fix",
     "eval:ci": "bash lab/eval/run_eval.sh --ci",
     "test": "python3 -m pytest lab/eval/tests/ -v",
+    "fetch:claude": "bash scripts/fetch-cc-changelog.sh && bash scripts/fetch-claude-docs.sh",
+    "fetch:copilot": "bash scripts/fetch-copilot-changelog.sh && bash scripts/fetch-copilot-docs.sh",
+    "fetch:antigravity": "bash scripts/fetch-antigravity-changelog.sh && bash scripts/fetch-antigravity-docs.sh",
+    "fetch:all": "npm run fetch:claude && npm run fetch:copilot && npm run fetch:antigravity",
     "prepare": "husky || true"
   },
   "devDependencies": {
@@ -23,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dimsour/capl-ai-toolkit.git"
+    "url": "https://github.com/kowalem/capl-ai-toolkit.git"
   },
   "author": "capl-ai-toolkit contributors",
   "license": "MIT"

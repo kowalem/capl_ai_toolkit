@@ -41,6 +41,7 @@ def default_eval(skill_path: str) -> EvalDefinition:
                 EvalCheck(check_type="has_iron_laws", description="Iron Laws has items", params={"min_count": 1}),
                 EvalCheck(check_type="frontmatter_field", description="Has name field", params={"field": "name"}),
                 EvalCheck(check_type="frontmatter_field", description="Has description field", params={"field": "description"}),
+                EvalCheck(check_type="frontmatter_field", description="Has compatibility field", params={"field": "compatibility"}),
             ]),
             "accuracy": EvalDimension(name="accuracy", weight=0.15, checks=[
                 EvalCheck(check_type="valid_skill_refs", description="All skill references valid"),
