@@ -191,20 +191,17 @@ def description_keywords(content: str, min: int = 5, keywords: list[str] | None 
     if keywords:
         found = [kw for kw in keywords if kw.lower() in desc]
     else:
-        # Default .NET / C# / ASP.NET Core domain keywords
+        # Default CAPL / CANoe domain keywords
         domain_keywords = [
-            "capl", "c#", "csharp", "asp.net", "aspnet", "ef core", "efcore",
-            "blazor", "maui", "wpf", "xunit", "nunit", "mstest", "linq",
-            "minimal api", "controller", "razor", "component", "servicecollection",
-            "dbcontext", "migration", "dto", "model", "endpoint", "middleware",
-            "authentication", "authorization", "jwt", "cookie", "policy", "claim",
-            "nsubstitute", "moq", "testcontainers", "webapplicationfactory",
-            "di", "scoped", "singleton", "transient", "ioptions", "ihttpclientfactory",
-            "cancellationtoken", "async", "await", "task", "decimal", "nullable",
-            "security", "auth", "session", "token", "deploy", "docker",
-            "kubernetes", "azure", "iis", "opentelemetry", "logging",
-            "debug", "investigate", "audit", "review", "plan", "verify",
-            "refactor", "performance", "optimize", "iron law",
+            "capl", "canoe", "canalyzer", "uds", "obd", "can bus", "canfd",
+            "lin", "flexray", "ethernet", "diagrequest", "diagresponse",
+            "mstimer", "timer", "on message", "on timer", "on start",
+            "on stop", "on key", "output", "sysvar", "signal", "envvar",
+            "testcase", "testfunction", "teststeppass", "teststepfail",
+            "symbolic", "database", "dbc", "fibex", "arxml", "node",
+            "network", "simulation", "diagnostic", "security", "auth",
+            "session", "token", "deploy", "audit", "review", "plan", 
+            "verify", "refactor", "performance", "optimize", "iron law",
         ]
         found = [kw for kw in domain_keywords if kw in desc]
 
